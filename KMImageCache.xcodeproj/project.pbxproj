@@ -7,53 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E072A7114E1061000E59FCF /* KMImageCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */; };
-		0E072A7214E1061000E59FCF /* KMImageCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */; };
+		0E072A9414E10E2E00E59FCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A7A14E10E2E00E59FCF /* AppDelegate.m */; };
+		0E072A9514E10E2E00E59FCF /* AppDatabase+KMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A7D14E10E2E00E59FCF /* AppDatabase+KMImageCache.m */; };
+		0E072A9614E10E2E00E59FCF /* CachedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A7F14E10E2E00E59FCF /* CachedImage.m */; };
+		0E072A9714E10E2E00E59FCF /* ImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A8114E10E2E00E59FCF /* ImageCacheManager.m */; };
+		0E072A9814E10E2E00E59FCF /* KMImageCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A8314E10E2E00E59FCF /* KMImageCacheViewController.m */; };
+		0E072A9914E10E2E00E59FCF /* KMImageCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E072A8414E10E2E00E59FCF /* KMImageCacheViewController.xib */; };
+		0E072A9A14E10E2E00E59FCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E072A8514E10E2E00E59FCF /* InfoPlist.strings */; };
+		0E072A9D14E10E2E00E59FCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A8C14E10E2E00E59FCF /* main.m */; };
+		0E072A9E14E10E2E00E59FCF /* AppDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A8F14E10E2E00E59FCF /* AppDatabase.m */; };
+		0E072A9F14E10E2E00E59FCF /* MojoDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A9114E10E2E00E59FCF /* MojoDatabase.m */; };
+		0E072AA014E10E2E00E59FCF /* MojoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A9314E10E2E00E59FCF /* MojoModel.m */; };
+		0E072AA414E10E5A00E59FCF /* KMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072AA314E10E5A00E59FCF /* KMImageCache.m */; };
 		0E7C03ED14E0F47500C39FEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03EC14E0F47500C39FEB /* UIKit.framework */; };
 		0E7C03EF14E0F47500C39FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03EE14E0F47500C39FEB /* Foundation.framework */; };
 		0E7C03F114E0F47500C39FEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03F014E0F47500C39FEB /* CoreGraphics.framework */; };
-		0E7C03F714E0F47500C39FEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C03F514E0F47500C39FEB /* InfoPlist.strings */; };
-		0E7C03F914E0F47500C39FEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C03F814E0F47500C39FEB /* main.m */; };
-		0E7C03FD14E0F47500C39FEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C03FC14E0F47500C39FEB /* AppDelegate.m */; };
-		0E7C041714E0FA8000C39FEB /* KMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C041614E0FA8000C39FEB /* KMImageCache.m */; };
-		0E7C042914E0FC7400C39FEB /* CachedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C042814E0FC7400C39FEB /* CachedImage.m */; };
-		0E7C042C14E0FC9B00C39FEB /* ImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C042B14E0FC9B00C39FEB /* ImageCacheManager.m */; };
-		0E7C043414E0FD5D00C39FEB /* AppDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C042F14E0FD5D00C39FEB /* AppDatabase.m */; };
-		0E7C043514E0FD5D00C39FEB /* MojoDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C043114E0FD5D00C39FEB /* MojoDatabase.m */; };
-		0E7C043614E0FD5D00C39FEB /* MojoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C043314E0FD5D00C39FEB /* MojoModel.m */; };
 		0E7C043814E0FD7C00C39FEB /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C043714E0FD7C00C39FEB /* libsqlite3.0.dylib */; };
-		0E7C043B14E0FDB700C39FEB /* AppDatabase+KMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C043A14E0FDB700C39FEB /* AppDatabase+KMImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E072A6E14E1061000E59FCF /* KMImageCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCacheViewController.h; sourceTree = "<group>"; };
-		0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCacheViewController.m; sourceTree = "<group>"; };
-		0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMImageCacheViewController.xib; sourceTree = "<group>"; };
+		0E072A7914E10E2E00E59FCF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E072A7A14E10E2E00E59FCF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E072A7C14E10E2E00E59FCF /* AppDatabase+KMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDatabase+KMImageCache.h"; sourceTree = "<group>"; };
+		0E072A7D14E10E2E00E59FCF /* AppDatabase+KMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDatabase+KMImageCache.m"; sourceTree = "<group>"; };
+		0E072A7E14E10E2E00E59FCF /* CachedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedImage.h; sourceTree = "<group>"; };
+		0E072A7F14E10E2E00E59FCF /* CachedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedImage.m; sourceTree = "<group>"; };
+		0E072A8014E10E2E00E59FCF /* ImageCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheManager.h; sourceTree = "<group>"; };
+		0E072A8114E10E2E00E59FCF /* ImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheManager.m; sourceTree = "<group>"; };
+		0E072A8214E10E2E00E59FCF /* KMImageCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCacheViewController.h; sourceTree = "<group>"; };
+		0E072A8314E10E2E00E59FCF /* KMImageCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCacheViewController.m; sourceTree = "<group>"; };
+		0E072A8414E10E2E00E59FCF /* KMImageCacheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMImageCacheViewController.xib; sourceTree = "<group>"; };
+		0E072A8614E10E2E00E59FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E072A8A14E10E2E00E59FCF /* KMImageCache-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KMImageCache-Info.plist"; sourceTree = "<group>"; };
+		0E072A8B14E10E2E00E59FCF /* KMImageCache-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KMImageCache-Prefix.pch"; sourceTree = "<group>"; };
+		0E072A8C14E10E2E00E59FCF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E072A8E14E10E2E00E59FCF /* AppDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDatabase.h; sourceTree = "<group>"; };
+		0E072A8F14E10E2E00E59FCF /* AppDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDatabase.m; sourceTree = "<group>"; };
+		0E072A9014E10E2E00E59FCF /* MojoDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MojoDatabase.h; sourceTree = "<group>"; };
+		0E072A9114E10E2E00E59FCF /* MojoDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MojoDatabase.m; sourceTree = "<group>"; };
+		0E072A9214E10E2E00E59FCF /* MojoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MojoModel.h; sourceTree = "<group>"; };
+		0E072A9314E10E2E00E59FCF /* MojoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MojoModel.m; sourceTree = "<group>"; };
+		0E072AA214E10E5A00E59FCF /* KMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCache.h; sourceTree = "<group>"; };
+		0E072AA314E10E5A00E59FCF /* KMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCache.m; sourceTree = "<group>"; };
 		0E7C03E814E0F47500C39FEB /* KMImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7C03EC14E0F47500C39FEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0E7C03EE14E0F47500C39FEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E7C03F014E0F47500C39FEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0E7C03F414E0F47500C39FEB /* KMImageCache-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMImageCache-Info.plist"; sourceTree = "<group>"; };
-		0E7C03F614E0F47500C39FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0E7C03F814E0F47500C39FEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0E7C03FA14E0F47500C39FEB /* KMImageCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMImageCache-Prefix.pch"; sourceTree = "<group>"; };
-		0E7C03FB14E0F47500C39FEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0E7C03FC14E0F47500C39FEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0E7C041514E0FA8000C39FEB /* KMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCache.h; sourceTree = "<group>"; };
-		0E7C041614E0FA8000C39FEB /* KMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCache.m; sourceTree = "<group>"; };
-		0E7C042714E0FC7400C39FEB /* CachedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedImage.h; sourceTree = "<group>"; };
-		0E7C042814E0FC7400C39FEB /* CachedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedImage.m; sourceTree = "<group>"; };
-		0E7C042A14E0FC9B00C39FEB /* ImageCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheManager.h; sourceTree = "<group>"; };
-		0E7C042B14E0FC9B00C39FEB /* ImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheManager.m; sourceTree = "<group>"; };
-		0E7C042E14E0FD5D00C39FEB /* AppDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDatabase.h; sourceTree = "<group>"; };
-		0E7C042F14E0FD5D00C39FEB /* AppDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDatabase.m; sourceTree = "<group>"; };
-		0E7C043014E0FD5D00C39FEB /* MojoDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MojoDatabase.h; sourceTree = "<group>"; };
-		0E7C043114E0FD5D00C39FEB /* MojoDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MojoDatabase.m; sourceTree = "<group>"; };
-		0E7C043214E0FD5D00C39FEB /* MojoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MojoModel.h; sourceTree = "<group>"; };
-		0E7C043314E0FD5D00C39FEB /* MojoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MojoModel.m; sourceTree = "<group>"; };
 		0E7C043714E0FD7C00C39FEB /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		0E7C043914E0FDB700C39FEB /* AppDatabase+KMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDatabase+KMImageCache.h"; sourceTree = "<group>"; };
-		0E7C043A14E0FDB700C39FEB /* AppDatabase+KMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDatabase+KMImageCache.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +71,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E072A7814E10E2E00E59FCF /* KMImageCacheSample */ = {
+			isa = PBXGroup;
+			children = (
+				0E072A7914E10E2E00E59FCF /* AppDelegate.h */,
+				0E072A7A14E10E2E00E59FCF /* AppDelegate.m */,
+				0E072A7B14E10E2E00E59FCF /* Classes */,
+				0E072A8514E10E2E00E59FCF /* InfoPlist.strings */,
+				0E072A8A14E10E2E00E59FCF /* KMImageCache-Info.plist */,
+				0E072A8B14E10E2E00E59FCF /* KMImageCache-Prefix.pch */,
+				0E072A8C14E10E2E00E59FCF /* main.m */,
+				0E072A8D14E10E2E00E59FCF /* MojoDatabase */,
+			);
+			path = KMImageCacheSample;
+			sourceTree = "<group>";
+		};
+		0E072A7B14E10E2E00E59FCF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E072A7C14E10E2E00E59FCF /* AppDatabase+KMImageCache.h */,
+				0E072A7D14E10E2E00E59FCF /* AppDatabase+KMImageCache.m */,
+				0E072A7E14E10E2E00E59FCF /* CachedImage.h */,
+				0E072A7F14E10E2E00E59FCF /* CachedImage.m */,
+				0E072A8014E10E2E00E59FCF /* ImageCacheManager.h */,
+				0E072A8114E10E2E00E59FCF /* ImageCacheManager.m */,
+				0E072A8214E10E2E00E59FCF /* KMImageCacheViewController.h */,
+				0E072A8314E10E2E00E59FCF /* KMImageCacheViewController.m */,
+				0E072A8414E10E2E00E59FCF /* KMImageCacheViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0E072A8D14E10E2E00E59FCF /* MojoDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				0E072A8E14E10E2E00E59FCF /* AppDatabase.h */,
+				0E072A8F14E10E2E00E59FCF /* AppDatabase.m */,
+				0E072A9014E10E2E00E59FCF /* MojoDatabase.h */,
+				0E072A9114E10E2E00E59FCF /* MojoDatabase.m */,
+				0E072A9214E10E2E00E59FCF /* MojoModel.h */,
+				0E072A9314E10E2E00E59FCF /* MojoModel.m */,
+			);
+			path = MojoDatabase;
+			sourceTree = "<group>";
+		};
+		0E072AA114E10E5A00E59FCF /* KMImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				0E072AA214E10E5A00E59FCF /* KMImageCache.h */,
+				0E072AA314E10E5A00E59FCF /* KMImageCache.m */,
+			);
+			path = KMImageCache;
+			sourceTree = "<group>";
+		};
 		0E7C03DD14E0F47500C39FEB = {
 			isa = PBXGroup;
 			children = (
-				0E7C041414E0FA6B00C39FEB /* KMImageCache */,
-				0E7C03F214E0F47500C39FEB /* KMImageCacheSample */,
+				0E072AA114E10E5A00E59FCF /* KMImageCache */,
+				0E072A7814E10E2E00E59FCF /* KMImageCacheSample */,
 				0E7C03EB14E0F47500C39FEB /* Frameworks */,
 				0E7C03E914E0F47500C39FEB /* Products */,
 			);
@@ -98,69 +151,6 @@
 				0E7C03F014E0F47500C39FEB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0E7C03F214E0F47500C39FEB /* KMImageCacheSample */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C042D14E0FD5D00C39FEB /* MojoDatabase */,
-				0E7C042614E0FC4B00C39FEB /* Classes */,
-				0E7C03FB14E0F47500C39FEB /* AppDelegate.h */,
-				0E7C03FC14E0F47500C39FEB /* AppDelegate.m */,
-				0E7C03F314E0F47500C39FEB /* Supporting Files */,
-			);
-			name = KMImageCacheSample;
-			path = KMImageCache;
-			sourceTree = "<group>";
-		};
-		0E7C03F314E0F47500C39FEB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C03F414E0F47500C39FEB /* KMImageCache-Info.plist */,
-				0E7C03F514E0F47500C39FEB /* InfoPlist.strings */,
-				0E7C03F814E0F47500C39FEB /* main.m */,
-				0E7C03FA14E0F47500C39FEB /* KMImageCache-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0E7C041414E0FA6B00C39FEB /* KMImageCache */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C041514E0FA8000C39FEB /* KMImageCache.h */,
-				0E7C041614E0FA8000C39FEB /* KMImageCache.m */,
-			);
-			name = KMImageCache;
-			path = KMImageCache/KMImageCache;
-			sourceTree = "<group>";
-		};
-		0E7C042614E0FC4B00C39FEB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C042714E0FC7400C39FEB /* CachedImage.h */,
-				0E7C042814E0FC7400C39FEB /* CachedImage.m */,
-				0E7C042A14E0FC9B00C39FEB /* ImageCacheManager.h */,
-				0E7C042B14E0FC9B00C39FEB /* ImageCacheManager.m */,
-				0E7C043914E0FDB700C39FEB /* AppDatabase+KMImageCache.h */,
-				0E7C043A14E0FDB700C39FEB /* AppDatabase+KMImageCache.m */,
-				0E072A6E14E1061000E59FCF /* KMImageCacheViewController.h */,
-				0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */,
-				0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		0E7C042D14E0FD5D00C39FEB /* MojoDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C042E14E0FD5D00C39FEB /* AppDatabase.h */,
-				0E7C042F14E0FD5D00C39FEB /* AppDatabase.m */,
-				0E7C043014E0FD5D00C39FEB /* MojoDatabase.h */,
-				0E7C043114E0FD5D00C39FEB /* MojoDatabase.m */,
-				0E7C043214E0FD5D00C39FEB /* MojoModel.h */,
-				0E7C043314E0FD5D00C39FEB /* MojoModel.m */,
-			);
-			path = MojoDatabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +203,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7C03F714E0F47500C39FEB /* InfoPlist.strings in Resources */,
-				0E072A7214E1061000E59FCF /* KMImageCacheViewController.xib in Resources */,
+				0E072A9914E10E2E00E59FCF /* KMImageCacheViewController.xib in Resources */,
+				0E072A9A14E10E2E00E59FCF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,26 +215,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7C03F914E0F47500C39FEB /* main.m in Sources */,
-				0E7C03FD14E0F47500C39FEB /* AppDelegate.m in Sources */,
-				0E7C041714E0FA8000C39FEB /* KMImageCache.m in Sources */,
-				0E7C042914E0FC7400C39FEB /* CachedImage.m in Sources */,
-				0E7C042C14E0FC9B00C39FEB /* ImageCacheManager.m in Sources */,
-				0E7C043414E0FD5D00C39FEB /* AppDatabase.m in Sources */,
-				0E7C043514E0FD5D00C39FEB /* MojoDatabase.m in Sources */,
-				0E7C043614E0FD5D00C39FEB /* MojoModel.m in Sources */,
-				0E7C043B14E0FDB700C39FEB /* AppDatabase+KMImageCache.m in Sources */,
-				0E072A7114E1061000E59FCF /* KMImageCacheViewController.m in Sources */,
+				0E072A9414E10E2E00E59FCF /* AppDelegate.m in Sources */,
+				0E072A9514E10E2E00E59FCF /* AppDatabase+KMImageCache.m in Sources */,
+				0E072A9614E10E2E00E59FCF /* CachedImage.m in Sources */,
+				0E072A9714E10E2E00E59FCF /* ImageCacheManager.m in Sources */,
+				0E072A9814E10E2E00E59FCF /* KMImageCacheViewController.m in Sources */,
+				0E072A9D14E10E2E00E59FCF /* main.m in Sources */,
+				0E072A9E14E10E2E00E59FCF /* AppDatabase.m in Sources */,
+				0E072A9F14E10E2E00E59FCF /* MojoDatabase.m in Sources */,
+				0E072AA014E10E2E00E59FCF /* MojoModel.m in Sources */,
+				0E072AA414E10E5A00E59FCF /* KMImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E7C03F514E0F47500C39FEB /* InfoPlist.strings */ = {
+		0E072A8514E10E2E00E59FCF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0E7C03F614E0F47500C39FEB /* en */,
+				0E072A8614E10E2E00E59FCF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -299,8 +289,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KMImageCache/KMImageCache-Prefix.pch";
-				INFOPLIST_FILE = "KMImageCache/KMImageCache-Info.plist";
+				GCC_PREFIX_HEADER = "KMImageCacheSample/KMImageCache-Prefix.pch";
+				INFOPLIST_FILE = "KMImageCacheSample/KMImageCache-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,8 +300,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KMImageCache/KMImageCache-Prefix.pch";
-				INFOPLIST_FILE = "KMImageCache/KMImageCache-Info.plist";
+				GCC_PREFIX_HEADER = "KMImageCacheSample/KMImageCache-Prefix.pch";
+				INFOPLIST_FILE = "KMImageCacheSample/KMImageCache-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
