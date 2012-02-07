@@ -7,19 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDatabase.h"
+#import "AppDatabase+KMImageCache.h"
+#import "ImageCacheManager.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize database = _database;
 
 - (void)dealloc
 {
     [_window release];
+    [_database release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // MojoDatabase
+    self.database = [[[AppDatabase alloc] initWithMigrations] autorelease];
+    // self.database.logging = YES;
+
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -64,6 +73,11 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (void)clearAllCaches
+{
+    [[ImageCacheManager sharedManager] removeAll];
 }
 
 @end

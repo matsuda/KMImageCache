@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class MojoDatabase;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    MojoDatabase *_database;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) MojoDatabase *database;
+
+- (void)clearAllCaches;
 
 @end
