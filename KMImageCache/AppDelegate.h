@@ -16,7 +16,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, retain) MojoDatabase *database;
-
-- (void)clearAllCaches;
+@property (nonatomic, retain) UIViewController *viewController;
 
 @end

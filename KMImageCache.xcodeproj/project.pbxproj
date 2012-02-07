@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E072A7114E1061000E59FCF /* KMImageCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */; };
+		0E072A7214E1061000E59FCF /* KMImageCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */; };
 		0E7C03ED14E0F47500C39FEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03EC14E0F47500C39FEB /* UIKit.framework */; };
 		0E7C03EF14E0F47500C39FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03EE14E0F47500C39FEB /* Foundation.framework */; };
 		0E7C03F114E0F47500C39FEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7C03F014E0F47500C39FEB /* CoreGraphics.framework */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E072A6E14E1061000E59FCF /* KMImageCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCacheViewController.h; sourceTree = "<group>"; };
+		0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCacheViewController.m; sourceTree = "<group>"; };
+		0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMImageCacheViewController.xib; sourceTree = "<group>"; };
 		0E7C03E814E0F47500C39FEB /* KMImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7C03EC14E0F47500C39FEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0E7C03EE14E0F47500C39FEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +143,9 @@
 				0E7C042B14E0FC9B00C39FEB /* ImageCacheManager.m */,
 				0E7C043914E0FDB700C39FEB /* AppDatabase+KMImageCache.h */,
 				0E7C043A14E0FDB700C39FEB /* AppDatabase+KMImageCache.m */,
+				0E072A6E14E1061000E59FCF /* KMImageCacheViewController.h */,
+				0E072A6F14E1061000E59FCF /* KMImageCacheViewController.m */,
+				0E072A7014E1061000E59FCF /* KMImageCacheViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7C03F714E0F47500C39FEB /* InfoPlist.strings in Resources */,
+				0E072A7214E1061000E59FCF /* KMImageCacheViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +234,7 @@
 				0E7C043514E0FD5D00C39FEB /* MojoDatabase.m in Sources */,
 				0E7C043614E0FD5D00C39FEB /* MojoModel.m in Sources */,
 				0E7C043B14E0FDB700C39FEB /* AppDatabase+KMImageCache.m in Sources */,
+				0E072A7114E1061000E59FCF /* KMImageCacheViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

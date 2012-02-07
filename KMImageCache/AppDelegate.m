@@ -9,17 +9,19 @@
 #import "AppDelegate.h"
 #import "AppDatabase.h"
 #import "AppDatabase+KMImageCache.h"
-#import "ImageCacheManager.h"
+#import "KMImageCacheViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize database = _database;
+@synthesize viewController = _viewController;
 
 - (void)dealloc
 {
     [_window release];
     [_database release];
+    [_viewController release];
     [super dealloc];
 }
 
@@ -31,6 +33,8 @@
 
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    self.viewController = [[[KMImageCacheViewController alloc] initWithNibName:NSStringFromClass([KMImageCacheViewController class]) bundle:nil] autorelease];
+    self.window.rootViewController = self.viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -73,11 +77,6 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
-}
-
-- (void)clearAllCaches
-{
-    [[ImageCacheManager sharedManager] removeAll];
 }
 
 @end
