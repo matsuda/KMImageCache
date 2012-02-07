@@ -13,6 +13,7 @@
 		0E7C03F714E0F47500C39FEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C03F514E0F47500C39FEB /* InfoPlist.strings */; };
 		0E7C03F914E0F47500C39FEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C03F814E0F47500C39FEB /* main.m */; };
 		0E7C03FD14E0F47500C39FEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C03FC14E0F47500C39FEB /* AppDelegate.m */; };
+		0E7C041714E0FA8000C39FEB /* KMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C041614E0FA8000C39FEB /* KMImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0E7C03FA14E0F47500C39FEB /* KMImageCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KMImageCache-Prefix.pch"; sourceTree = "<group>"; };
 		0E7C03FB14E0F47500C39FEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0E7C03FC14E0F47500C39FEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E7C041514E0FA8000C39FEB /* KMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMImageCache.h; sourceTree = "<group>"; };
+		0E7C041614E0FA8000C39FEB /* KMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMImageCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +48,8 @@
 		0E7C03DD14E0F47500C39FEB = {
 			isa = PBXGroup;
 			children = (
-				0E7C03F214E0F47500C39FEB /* KMImageCache */,
+				0E7C041414E0FA6B00C39FEB /* KMImageCache */,
+				0E7C03F214E0F47500C39FEB /* KMImageCacheSample */,
 				0E7C03EB14E0F47500C39FEB /* Frameworks */,
 				0E7C03E914E0F47500C39FEB /* Products */,
 			);
@@ -69,13 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0E7C03F214E0F47500C39FEB /* KMImageCache */ = {
+		0E7C03F214E0F47500C39FEB /* KMImageCacheSample */ = {
 			isa = PBXGroup;
 			children = (
 				0E7C03FB14E0F47500C39FEB /* AppDelegate.h */,
 				0E7C03FC14E0F47500C39FEB /* AppDelegate.m */,
 				0E7C03F314E0F47500C39FEB /* Supporting Files */,
 			);
+			name = KMImageCacheSample;
 			path = KMImageCache;
 			sourceTree = "<group>";
 		};
@@ -88,6 +93,16 @@
 				0E7C03FA14E0F47500C39FEB /* KMImageCache-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E7C041414E0FA6B00C39FEB /* KMImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				0E7C041514E0FA8000C39FEB /* KMImageCache.h */,
+				0E7C041614E0FA8000C39FEB /* KMImageCache.m */,
+			);
+			name = KMImageCache;
+			path = KMImageCache/KMImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +168,7 @@
 			files = (
 				0E7C03F914E0F47500C39FEB /* main.m in Sources */,
 				0E7C03FD14E0F47500C39FEB /* AppDelegate.m in Sources */,
+				0E7C041714E0FA8000C39FEB /* KMImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +270,7 @@
 				0E7C040214E0F47500C39FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
