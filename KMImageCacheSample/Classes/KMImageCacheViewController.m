@@ -134,14 +134,25 @@ static NSString * kImageUrl = @"http://matsuda.me/images/logo.png";
     [self cancel];
 }
 
+//- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+//{
+//    [self cancel];
+//    UIImage *image = [UIImage imageWithData:self.data];
+//    self.imageView.image = image;
+//    [self.imageView setNeedsLayout];
+//    [[ImageCacheManager sharedManager] storeImage:image withURL:kImageUrl];
+//    self.data = nil;
+//}
+
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     [self cancel];
-    UIImage *image = [UIImage imageWithData:self.data];
+    ImageCacheManager *manager = [ImageCacheManager sharedManager];
+    [manager storeData:self.data withURL:kImageUrl];
+    self.data = nil;
+    UIImage *image = [manager imageWithURL:kImageUrl];
     self.imageView.image = image;
     [self.imageView setNeedsLayout];
-    [[ImageCacheManager sharedManager] storeImage:image withURL:kImageUrl];
-    self.data = nil;
 }
 
 @end

@@ -29,25 +29,48 @@
 
 
 @interface KMImageCache ()
+
+@property (nonatomic, retain) NSCache *cache;
+
 - (id)initWithCacheDir:(NSString *)cacheDir;
 + (void)createDirectoryIfNotExist:(NSString *)dir;
 + (NSString *)cacheDir;
 + (NSString *)cachePathForURL:(NSString *)url;
 + (void)removeAtPath:(NSString *)path;
 + (BOOL)isExistImage:(NSString *)path;
+
 @end
+
 
 @implementation KMImageCache
 
 #pragma mark - Lifecycle
 
-- (id)initWithCacheDir:(NSString *)cacheDir
+@synthesize cache = _cache;
+
+- (id)init
 {
     self = [super init];
+    if (self) {
+        self.cache = [[[NSCache alloc] init] autorelease];
+    }
+    return self;
+}
+
+- (id)initWithCacheDir:(NSString *)cacheDir
+{
+    self = [self init];
     if (self) {
         [[self class] createDirectoryIfNotExist:cacheDir];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [_cache release];
+
+    [super dealloc];
 }
 
 #pragma mark - Private
@@ -126,17 +149,36 @@
 /*
  Instance methods
  */
-- (UIImage *)imageWithURL:(NSString *)url
+//- (UIImage *)imageWithURL:(NSString *)url
+//{
+//    if (!url || [url length] <= 0) return nil;
+//
+//	NSString *path = [[self class] cachePathForURL:url];
+//
+//	NSFileManager *fm = [NSFileManager defaultManager];
+//	if (![fm fileExistsAtPath:path]) return nil;
+//
+//	UIImage *img = [UIImage imageWithContentsOfFile:path];
+//	return img;
+//}
+
+- (UIImage *)cachedImageWithURL:(NSString *)url
 {
     if (!url || [url length] <= 0) return nil;
 
 	NSString *path = [[self class] cachePathForURL:url];
+    UIImage *image = [_cache objectForKey:path];
+    if (image) return image;
 
 	NSFileManager *fm = [NSFileManager defaultManager];
 	if (![fm fileExistsAtPath:path]) return nil;
 
-	UIImage *img = [UIImage imageWithContentsOfFile:path];
-	return img;
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    image = [UIImage imageWithData:data];
+    if (image) {
+        [_cache setObject:image forKey:path];
+    }
+    return image;
 }
 
 - (void)storeImage:(UIImage *)image withURL:(NSString *)url
@@ -154,15 +196,33 @@
 	[fm createFileAtPath:path contents:data attributes:nil];
 }
 
+- (void)storeData:(NSData *)data withURL:(NSString *)url
+{
+    if (!url || [url length] <= 0) return;
+
+	NSString *path = [[self class] cachePathForURL:url];
+
+	NSFileManager *fm = [NSFileManager defaultManager];
+	if ([fm fileExistsAtPath:path])
+		[fm removeItemAtPath:path error:nil];
+
+	[fm createFileAtPath:path contents:data attributes:nil];
+
+    UIImage *image = [UIImage imageWithData:data];
+    [_cache setObject:image forKey:data];
+}
 
 - (void)removeWithURL:(NSString *)url
 {
-    [[self class] removeAtPath:[[self class] cachePathForURL:url]];
+    NSString *path = [[self class] cachePathForURL:url];
+    [[self class] removeAtPath:path];
+    [_cache removeObjectForKey:path];
 }
 
 - (void)removeAll
 {
     [[self class] removeAll];
+    [_cache removeAllObjects];
 }
 
 @end

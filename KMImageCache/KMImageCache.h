@@ -28,10 +28,12 @@
  Instance methods
  */
 // 指定されたURLに該当するキャッシュデータを返す
-- (UIImage *)imageWithURL:(NSString *)url;
+//- (UIImage *)imageWithURL:(NSString *)url;
+- (UIImage *)cachedImageWithURL:(NSString *)url;
 
 // 指定されたURLをキーに画像を保存する
 - (void)storeImage:(UIImage *)image withURL:(NSString *)url;
+- (void)storeData:(NSData *)data withURL:(NSString *)url;
 
 // 指定されたURLに該当するキャッシュデータを削除
 - (void)removeWithURL:(NSString *)url;

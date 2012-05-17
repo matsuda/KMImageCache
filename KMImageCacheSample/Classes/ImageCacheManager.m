@@ -67,7 +67,7 @@ static NSTimeInterval const kImageCacheManagerMaxCount = 300;
  */
 - (UIImage *)imageWithURL:(NSString *)url
 {
-    return [[KMImageCache sharedCache] imageWithURL:url];
+    return [[KMImageCache sharedCache] cachedImageWithURL:url];
 }
 
 - (void)storeImage:(UIImage *)image withURL:(NSString *)url
@@ -82,6 +82,20 @@ static NSTimeInterval const kImageCacheManagerMaxCount = 300;
     cachedImage.createdAt = [NSDate date];
     [cachedImage save];
     [[KMImageCache sharedCache] storeImage:image withURL:url];
+}
+
+- (void)storeData:(NSData *)data withURL:(NSString *)url
+{
+    CachedImage *cachedImage = [CachedImage findByURL:url];
+    if (cachedImage) {
+        [[KMImageCache sharedCache] removeWithURL:url];
+    } else {
+        cachedImage = [[[CachedImage alloc] init] autorelease];
+        cachedImage.url = url;
+    }
+    cachedImage.createdAt = [NSDate date];
+    [cachedImage save];
+    [[KMImageCache sharedCache] storeData:data withURL:url];
 }
 
 - (void)removeAll

@@ -20,6 +20,7 @@
 
 // 指定されたURLをキーに画像を保存する
 - (void)storeImage:(UIImage *)image withURL:(NSString *)url;
+- (void)storeData:(NSData *)data withURL:(NSString *)url;
 
 // キャッシュをクリア
 - (void)removeAll;
